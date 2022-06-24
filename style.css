@@ -29,7 +29,7 @@
   form input {
     outline: none;
   }
-  form button {
+form button {
     color: blue;
     background: #F7FFFE;
     cursor: pointer;
@@ -61,6 +61,11 @@
   .filter-todo {
     padding: 1rem;
   }
+
+  .sort{
+    padding: 1 rem;
+ }
+
   .todo li {
     flex: 1;
   }
