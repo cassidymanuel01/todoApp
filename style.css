@@ -61,12 +61,12 @@ li input[type = "checkbox"]:checked ~ p {
     text-decoration: line-through;
 }
 
-.close {
+.del {
   position: absolute;
   right: 0;
   top: 0;
 }
-.close:hover {
+.del:hover {
   background-color: #f44336;
   color: white;
 }

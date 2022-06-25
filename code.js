@@ -1,11 +1,12 @@
 let myList = document.getElementById('newUL');
 console.log(myList)
 localStorage.clear()
-let lists = JSON.parse(localStorage.getItem('records')) ?
-JSON.parse(localStorage.getItem('records')) : [{
+let lists = JSON.parse(localStorage.getItem('data')) ?
+JSON.parse(localStorage.getItem('data')) : [{
     id: 1,
     item: 'TV Stand',
 }];
+
 function initiate() {
     myList.innerHTML = ''
     lists.forEach(element => {
@@ -21,14 +22,13 @@ function initiate() {
 initiate()
 
 function addData() {
-    // e.preventDefault();
     let todo = document.getElementById('myInput').value
     lists.push({
         id: lists.length + 1,
         item: todo,
     });
     initiate()
-    localStorage.setItem('records', JSON.stringify(lists))
+    localStorage.setItem('data', JSON.stringify(lists))
 }
 
 function deleteData(event) {
