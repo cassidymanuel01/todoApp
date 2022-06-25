@@ -7,47 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css">
     <title>To Do App</title>
 </head>
-        <body>
-            <div class="container vh-100 d-flex justify-content-center align-content-center flex-column">
-            <header>
-                <h1>To do List</h1>
-              </header>
-              <form>
-                <input type="text" class="todo-input" />
-                <button class="todo-button" type="submit">
-                  <i class="fas fa-plus-square"></i>
-                </button>
-                <div class="select">
-                  <select name="todos" class="filter-todo">
-                    <option value="all">Sort By</option>
-                    <option value="asc">asc</option>
-                    <option value="desc">desc</option>
-                  </select>
+
+<body class="m-5">
+    <section id="navbar">
+        <div class="text-center text-light">
+            <h2 class="lead display-6 fw-bold">My To Do List</h2>
+        </div>
+        <nav class="navbar navbar-light" id="myDiv">
+            <div class="container-fluid">
+                <div class="dropdown">
+                    <button onclick="" type="submit" class="btn btn-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Sort</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <a class="dropdown-item" href="#" onclick="sort()">Alphabetical order</a>
+                    </ul>
                 </div>
-              </form>
-              <div class="todo-container">
-                <ul class="todo-list"></ul>
-              </div>
+                <input type="text" id="myInput" placeholder="Add An Item...">
+                <span onclick="addData()" class="addBtn btn btn-primary">Add</span>
             </div>
-        </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
-   
-    <script src="./code.js"></script>
+    </nav>
+    </section>
+    <div class="container">
+    <ul id="newUL" class="">
+    </ul>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+</script>
+<script src="./code.js"></script>
 </body>
 
 </html>
