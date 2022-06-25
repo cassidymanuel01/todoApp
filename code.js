@@ -1,11 +1,8 @@
 let myList = document.getElementById('newUL');
 console.log(myList)
-localStorage.clear()
+// localStorage.clear()
 let lists = JSON.parse(localStorage.getItem('data')) ?
-JSON.parse(localStorage.getItem('data')) : [{
-    id: 1,
-    item: 'TV Stand',
-}];
+JSON.parse(localStorage.getItem('data')) : [];
 
 function initiate() {
     myList.innerHTML = ''
